@@ -1,0 +1,25 @@
+.registro{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-input{
+        width: 50%;
+        padding: .25rem;
+    }
+    &-btn{
+        display: flex;
+        flex-wrap: wrap;
+        .container{
+            width: 50%;
+            padding: .25rem;
+        }
+    }
+}
+@media screen and (max-width:596px) {
+    .registro{
+        &-input{
+            width: 100%;
+        }
+    }
+    
+}

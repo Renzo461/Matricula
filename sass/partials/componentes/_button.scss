@@ -1,0 +1,54 @@
+.button {
+    position: relative;
+    text-align: center;
+    background: #0065FF;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.75rem;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .5), 7px 7px 20px rgba(0, 0, 0, .1), 4px 4px 5px rgba(0, 0, 0, .2);
+    transition: background-color .5s, color .5s, box-shadow .5s;
+    overflow: hidden;
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 2px;
+        background-color: #0004ff;
+        width: 0%;
+        transition: width .7s;
+    }
+
+    &::before {
+        top: inherit;
+        right: inherit;
+        left: 0;
+        bottom: 0;
+    }
+
+    &:hover {
+        background-color: white;
+        color: #0065FF;
+        box-shadow: none;
+
+        &:after {
+            width: 100%;
+        }
+
+        &:before {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .button{
+        font-size: .75rem;
+        padding: .5rem;
+    }
+}

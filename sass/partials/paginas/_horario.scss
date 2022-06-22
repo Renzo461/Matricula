@@ -1,0 +1,21 @@
+.horario {
+    &-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &-curso {
+            width: 200px;
+            margin: 0.5rem;
+            border: solid 2px rgb(155, 187, 202);            
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            &-nombre {
+                margin-bottom: 0.25rem;
+            }
+
+            &-detalle {
+                padding-left: 1rem;
+            }
+        }
+    }
+}

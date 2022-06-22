@@ -1,0 +1,45 @@
+.input {
+    input {
+        border-radius: 10px;
+        border: 1px solid #7A869A;
+        width: 100%;
+    }
+
+    // Input sin logo
+    &-normal {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    svg {
+        position: absolute;
+        margin: 10px 0 0 8px;
+        width: 24px;
+    }
+
+    // Input con logo
+    &-logo {
+        padding: 0.75rem 0.75rem 0.75rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .input {
+        svg{
+            margin: 5px;
+        }
+        &-normal {
+            font-size: 13px;
+            padding: 0.5rem;
+        }
+
+        &-logo {
+            font-size: 13px;
+            padding: 0.5rem 2rem;
+        }
+    }
+}
+@media screen and (max-width: 992px){
+
+}
